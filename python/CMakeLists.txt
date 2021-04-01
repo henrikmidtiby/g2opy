@@ -11,8 +11,8 @@ include_directories(${PROJECT_SOURCE_DIR}/EXTERNAL/pybind11/include)
 include(pybind11Tools)
 
 
-pybind11_add_module(g2o g2o.cpp)
-target_link_libraries(g2o PRIVATE 
+pybind11_add_module(g2opyhenrik g2o.cpp)
+target_link_libraries(g2opyhenrik PRIVATE 
     core
     solver_cholmod
     solver_csparse

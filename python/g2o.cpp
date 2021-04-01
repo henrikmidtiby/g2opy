@@ -42,7 +42,7 @@ namespace g2o {
 
 
 
-PYBIND11_MODULE(g2o, m) {
+PYBIND11_MODULE(g2opyhenrik, m) {
 
     declareHyperGraph(m);
     declareOptimizableGraph(m);
