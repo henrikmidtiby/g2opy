@@ -21,6 +21,7 @@ void declareOptimizableGraph(py::module & m) {
 
         py::enum_<CLS::ActionType>(cls, "ActionType")
             .value("AT_PREITERATION", CLS::ActionType::AT_PREITERATION)
+            .value("AT_POSTITERATION", CLS::ActionType::AT_POSTITERATION)
             .value("AT_NUM_ELEMENTS", CLS::ActionType::AT_NUM_ELEMENTS)
             .export_values();
 

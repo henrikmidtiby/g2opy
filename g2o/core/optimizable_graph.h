@@ -65,7 +65,8 @@ namespace g2o {
   struct G2O_CORE_API OptimizableGraph : public HyperGraph {
 
     enum ActionType {
-      AT_PREITERATION, AT_POSTITERATION,
+      AT_PREITERATION, 
+      AT_POSTITERATION,
       AT_NUM_ELEMENTS, // keep as last element
     };
 
