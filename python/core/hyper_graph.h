@@ -12,6 +12,8 @@ using namespace pybind11::literals;
 
 
 namespace g2o {
+    const int HyperGraph::UnassignedId;
+    const int HyperGraph::InvalidId;
 
 void declareHyperGraph(py::module & m) {
 
