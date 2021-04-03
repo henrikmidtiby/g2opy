@@ -5,12 +5,8 @@ include_directories(${CHOLMOD_INCLUDE_DIR})
 include_directories(${CSPARSE_INCLUDE_DIR})
 
 
-# pybind11 (version 2.2.1)
-LIST(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/EXTERNAL/pybind11/tools)
-include_directories(${PROJECT_SOURCE_DIR}/EXTERNAL/pybind11/include)
-include(pybind11Tools)
 
-
+add_subdirectory(EXTERNAL/pybind11)
 pybind11_add_module(g2opyhenrik g2o.cpp)
 target_link_libraries(g2opyhenrik PRIVATE 
     core
