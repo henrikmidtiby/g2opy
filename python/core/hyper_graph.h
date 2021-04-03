@@ -68,7 +68,7 @@ void declareHyperGraph(py::module & m) {
 
         py::class_<HyperGraph::Vertex, HyperGraph::HyperGraphElement>(cls, "Vertex")
             .def(py::init<int>(),
-                    "id"_a=HyperGraph::UnassignedId)
+                    "id"_a=HyperGraph::InvalidId)
             .def("id", &HyperGraph::Vertex::id)                                                                        // -> int
             .def("set_id", &HyperGraph::Vertex::setId,
                     "id"_a)                                                                                // int -> void
