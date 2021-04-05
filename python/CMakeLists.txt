@@ -7,8 +7,8 @@ include_directories(${CSPARSE_INCLUDE_DIR})
 
 
 add_subdirectory(EXTERNAL/pybind11)
-pybind11_add_module(g2opyhenrik g2o.cpp)
-target_link_libraries(g2opyhenrik PRIVATE 
+pybind11_add_module(g2o g2o.cpp)
+target_link_libraries(g2o PRIVATE 
     core
     solver_cholmod
     solver_csparse
