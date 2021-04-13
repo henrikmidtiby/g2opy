@@ -23,11 +23,12 @@ cd g2opy
 mkdir build
 cd build
 cmake ..
+export CPATH=/usr/include/python3.8:$CPATH
 make -j8
 cd ..
 python setup.py install
 ```
-Tested under Ubuntu 16.04, Python 3.6+.
+Tested under Ubuntu 20.04, Python 3.8+.
 
 
 ## Get Started
