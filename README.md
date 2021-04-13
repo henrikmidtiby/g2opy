@@ -19,6 +19,8 @@ In the contrib folder, I collected some useful 3rd-party C++ code related to g2o
 ## Installation
 ```
 git clone https://github.com/uoip/g2opy.git
+git submodule init
+git submodule update
 cd g2opy
 mkdir build
 cd build
